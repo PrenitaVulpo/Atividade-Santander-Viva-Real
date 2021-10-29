@@ -1,0 +1,26 @@
+* {
+	font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+body {
+	display: auto;
+	margin: 0;
+}
+
+.main-header {
+	width: 100%;
+	background-color: #1190cd;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.link-button {
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 0 16px;
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 56px;
+	font-weight: 600;
+}
