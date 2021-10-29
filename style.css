@@ -9,18 +9,31 @@ body {
 
 .main-header {
 	width: 100%;
+	height: fit-content;
 	background-color: #1190cd;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
+.header-link-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .link-button {
+	height: 100%;
+	text-align: center;
+	line-height: 56px;
 	font-size: 13px;
 	text-transform: uppercase;
 	padding: 0 16px;
 	text-decoration: none;
 	color: #ffffff;
-	line-height: 56px;
 	font-weight: 600;
+}
+
+.link-button:hover {
+	background-color: #249ad1;
 }
