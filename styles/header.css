@@ -1,0 +1,42 @@
+.main-header {
+	/* width: 100%; */
+	height: fit-content;
+	background-color: #1190cd;
+	padding: 0 48px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-header > section {
+	display: inherit;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	height: 30px;
+}
+
+.header-link-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-button {
+	height: 100%;
+	text-align: center;
+	line-height: 56px;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 0 16px;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.link-button:hover {
+	background-color: #249ad1;
+}
