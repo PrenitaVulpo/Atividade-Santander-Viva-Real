@@ -19,10 +19,13 @@
 	max-width: 1344px;
 }
 
+.footer-top-div .notlast {
+	border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
 .footer-top-content {
 	display: flex;
 	flex-direction: column;
-	border-right: 1px solid rgba(0, 0, 0, 0.12);
 	margin-right: 2%;
 	width: 23%;
 	font-weight: 600;
@@ -30,15 +33,38 @@
 	line-height: 21px;
 }
 
+.footer-content-title-container {
+	margin-bottom: 16px;
+}
+
 .footer-content-title {
 	color: rgba(255, 255, 255, 0.5);
-	margin-bottom: 16px;
 }
 
 .footer-text-content {
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 24px;
+}
+
+.social-links-container {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 8px;
+}
+
+.social-links-container a + a {
+	margin-left: 8px;
+}
+
+.apps-container {
+	display: flex;
+	flex-direction: row;
+	padding: 8px 0;
+}
+
+.apps-container a + a {
+	margin-left: 8px;
 }
 
 .footer-bottom {
