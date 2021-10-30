@@ -1,0 +1,29 @@
+.main-footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-top {
+	background-color: #0a5a80;
+}
+
+.footer-bottom {
+	background-color: #094f71;
+	padding: 16px 48px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.olx {
+	margin-right: 32px;
+}
+
+.copyright {
+	text-align: left;
+	color: rgb(255, 255, 255, 0.5);
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 21px;
+}
