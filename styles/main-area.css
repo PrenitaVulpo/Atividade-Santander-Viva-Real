@@ -138,6 +138,7 @@ main {
 }
 
 .results-title h1 {
+	margin: 0;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 24px;
@@ -147,5 +148,13 @@ main {
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 24px;
-	margin-left: 4px;
+	margin-left: 6px;
+}
+
+.results-title .title-city {
+	text-transform: capitalize;
+}
+
+.results-title .title-state {
+	text-transform: uppercase;
 }

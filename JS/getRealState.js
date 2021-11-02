@@ -1,5 +1,5 @@
-const realStateURL = () =>
-	"https://private-9e061d-piweb.apiary-mock.com/venda?state=sp&city=sao-paulo";
+const realStateURL = (state, city) =>
+	`https://private-9e061d-piweb.apiary-mock.com/venda?state=${state}&city=${city}`;
 
 const getRealState = async () => {
 	const realStatePromise = fetch(

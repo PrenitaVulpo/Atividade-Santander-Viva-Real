@@ -1,11 +1,18 @@
 import getRealState from "./JS/getRealState.js";
 import appendTitle from "./JS/appendTitle.js";
+import resultsNavClassControler from "./JS/resultsNavClassControler.js";
+import formatSearch from "./JS/formatSearch.js";
 
 const loadPage = async () => {
-	const { result: realState, totalCount } = await getRealState();
+	resultsNavClassControler();
 
-	console.log(realState);
-	appendTitle(totalCount);
+	const s = "São Paulo";
+
+	const { city, state } = formatSearch(s);
+
+	let { result: realState, totalCount } = await getRealState(state, city);
+
+	appendTitle(totalCount, "são paulo", "sp");
 
 	const cb = document.getElementById("toggle-button");
 	cb.addEventListener("click", () => {
