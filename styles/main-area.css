@@ -48,6 +48,50 @@ aside {
 	width: 100%;
 }
 
+.toggle-button-checkbox {
+	position: absolute;
+	left: -9999px;
+}
+
+.toggle-button-button {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	cursor: pointer;
+}
+
+.toggle-button-button::after,
+.toggle-button-button::before {
+	content: "";
+	transition: all 0.3s ease;
+}
+
+.toggle-button-button::before {
+	display: inline-block;
+	width: 52px;
+	height: 32px;
+	background-color: #900;
+	border-radius: 26px;
+}
+
+.toggle-button-button::after {
+	position: absolute;
+	top: 3px;
+	left: 2px;
+	width: 26px;
+	height: 26px;
+	background-color: #fff;
+	border-radius: 26px;
+}
+
+#toggle-button:checked + .toggle-button-button::before {
+	background-color: #55d069;
+}
+
+#toggle-button:checked + .toggle-button-button::after {
+	left: 50px;
+}
+
 /* results section styles */
 
 main {

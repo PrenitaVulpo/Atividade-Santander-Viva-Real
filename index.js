@@ -6,6 +6,11 @@ const loadPage = async () => {
 
 	console.log(realState);
 	appendTitle(totalCount);
+
+	const cb = document.getElementById("toggle-button");
+	cb.addEventListener("click", () => {
+		console.log(cb.checked);
+	});
 };
 
 loadPage();
