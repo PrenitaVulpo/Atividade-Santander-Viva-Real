@@ -13,6 +13,7 @@ aside {
 	line-height: 21px;
 	color: rgba(0, 0, 0, 0.5);
 	text-transform: uppercase;
+	min-width: 288px;
 }
 
 .aside-top {
@@ -49,7 +50,38 @@ aside {
 
 /* results section styles */
 
+main {
+	display: flex;
+	flex-direction: row;
+}
+
 .results-area {
 	flex: 1;
 	margin-left: 24px;
+}
+
+.results-nav {
+	display: flex;
+	flex-direction: row;
+}
+
+.result-tab {
+	background: transparent;
+	border-radius: 0;
+	color: #1190cd;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+	height: 44px;
+	padding: 0 24px;
+	text-transform: uppercase;
+	border: none;
+}
+
+.result-tab:hover {
+	background-color: rgba(17, 144, 205, 0.12);
+}
+
+.result-tab-selected {
+	border-bottom: 3px solid #1190cd;
 }
