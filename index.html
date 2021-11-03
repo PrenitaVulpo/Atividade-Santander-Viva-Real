@@ -63,48 +63,78 @@
 					</div>
 					<div class="aside-section">
 						<span class="aside-label"> imóvel com </span>
-						<label class="toggle-button-button" for="toggle-button"></label>
-						<input
-							type="checkbox"
-							class="toggle-button-checkbox"
-							id="toggle-button"
-						/>
+						<div class="toggle-button-div">
+							<input
+								type="checkbox"
+								class="toggle-checkbox"
+								id="container-checkbox"
+							/>
+							<label for="container-checkbox" class="toggle-button"> </label>
+							<span> Tour Virtual ou Vídeos </span>
+						</div>
 					</div>
 					<div class="aside-section">
-						<label class="aside-label" for="location-field">
-							localização do imóvel
-						</label>
-						<input
-							id="location-field"
-							class="text-input"
-							type="text"
-							placeholder="Digite uma rua, bairro ou cidade"
-						/>
+						<label class="aside-label"> TIPO DE IMÓVEIS </label>
+						<select required>
+							<option value="" disabled selected hidden>Mostrar todos</option>
+						</select>
 					</div>
-					<div class="aside-section">
-						<label class="aside-label" for="location-field">
-							localização do imóvel
-						</label>
-						<input
-							id="location-field"
-							class="text-input"
-							type="text"
-							placeholder="Digite uma rua, bairro ou cidade"
-						/>
+					<div class="aside-double-section">
+						<div>
+							<label class="aside-label"> PREÇO MÍNIMO </label>
+							<input class="text-input" placeholder="R$ " />
+						</div>
+						<div>
+							<label class="aside-label"> PREÇO MÁXIMO </label>
+							<input class="text-input" placeholder="R$ ilimitado" />
+						</div>
 					</div>
+
 					<div class="aside-section">
-						<label class="aside-label" for="location-field">
-							localização do imóvel
-						</label>
-						<input
-							id="location-field"
-							class="text-input"
-							type="text"
-							placeholder="Digite uma rua, bairro ou cidade"
-						/>
+						<label class="aside-label"> NÚMERO DE QUARTOS </label>
+						<div class="rooms-buttons">
+							<button class="room-button">1+</button>
+							<button class="room-button">2+</button>
+							<button class="room-button">3+</button>
+							<button class="room-button">4+</button>
+							<button class="room-button">5+</button>
+						</di>
 					</div>
 				</section>
-				<section class="aside-bottom"></section>
+				<section class="aside-bottom">
+					<div class="double-input">
+            <div>
+              <label id="minimum-value"> ÁREA MÍNIMA </label>
+              <input class="input-value" placeholder="m&sup2" />
+            </div>
+            <div>
+              <label id="maximum-value"> PREÇO MÁXIMO </label>
+              <input class="input-value" placeholder="ilimitado m&sup2" />
+            </div>
+          </div>
+
+          <div class="aside-section">
+            <label class="aside-label"> NÚMERO DE VAGAS NA GARAGEM </label>
+						<div class="rooms-buttons">
+              <button class="room-button"> 1+ </button> 
+              <button class="room-button"> 2+ </button> 
+              <button class="room-button"> 3+ </button> 
+              <button class="room-button"> 4+ </button> 
+              <button class="room-button"> 5+ </button> 
+						</div>
+          </div>
+
+          <div class="aside-section">
+            <label class="aside-label"> NÚMERO DE BANHEIROS </label>
+						<div class="rooms-buttons">
+              <button class="room-button"> 1+ </button> 
+              <button class="room-button"> 2+ </button> 
+              <button class="room-button"> 3+ </button> 
+              <button class="room-button"> 4+ </button> 
+              <button class="room-button"> 5+ </button> 
+						</div>
+          </div>
+				</section>
 			</aside>
 			<section class="results-area">
 				<header class="results-header">
