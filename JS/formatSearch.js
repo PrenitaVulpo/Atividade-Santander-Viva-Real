@@ -1,10 +1,12 @@
 const generateDictionary = () => {
 	const dictionary = new Map();
 
-	dictionary.set("sp", "sao-paulo");
 	dictionary.set("sao-paulo", "sp");
+	dictionary.set("sp", "sao-paulo");
 	dictionary.set("saopaulo", "sao-paulo");
 	dictionary.set("riodejaneiro", "rio-de-janeiro");
+	dictionary.set("riode", "rio-de-janeiro");
+	dictionary.set("rio", "rio-de-janeiro");
 	dictionary.set("rj", "rio-de-janeiro");
 	dictionary.set("rio-de-janeiro", "rj");
 

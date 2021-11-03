@@ -11,11 +11,24 @@ const loadPage = async () => {
 
 	const { city, state } = formatSearch(s);
 
-	let { result: realState, totalCount } = await getRealState(state, city);
+	let results = { properties: null, totalCount: 0 };
 
-	appendTitle(totalCount, "são paulo", "sp");
+	results = { ...(await getRealState(state, city)) };
 
-	appendCards(realState);
+	appendTitle(results.totalCount, "são paulo", "sp");
+
+	appendCards(results.properties);
+
+	const locationField = document.querySelector("#location-field");
+	locationField.addEventListener("blur", async (e) => {
+		const { city, state } = formatSearch(e.target.value);
+
+		results = { ...(await getRealState(state, city)) };
+
+		appendTitle(results.totalCount, city, state);
+
+		appendCards(results.properties);
+	});
 
 	const cb = document.getElementById("toggle-button");
 	cb.addEventListener("click", () => {

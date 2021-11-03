@@ -1,6 +1,8 @@
 const appendTitle = (number, city, state) => {
 	const resultsTitle = document.querySelector(".results-title");
 
+	resultsTitle.innerHTML = "";
+
 	const resultsNumber = document.createElement("h1");
 	const resultsText = document.createElement("span");
 	const resultsCity = document.createElement("span");
@@ -11,7 +13,7 @@ const appendTitle = (number, city, state) => {
 
 	resultsNumber.innerText = number;
 	resultsText.innerText = `Imóveis à venda em`;
-	resultsCity.innerText = city;
+	resultsCity.innerText = `${city.replace(/-/g, " ")}`;
 	resultsState.innerText = `- ${state}`;
 
 	resultsTitle.appendChild(resultsNumber);
