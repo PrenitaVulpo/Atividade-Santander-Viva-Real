@@ -159,6 +159,29 @@ main {
 	text-transform: uppercase;
 }
 
+.result-tags {
+	margin-top: 12px;
+	margin-bottom: 24px;
+}
+
+.result-tags span {
+	font-size: 13px;
+	line-height: 31px;
+	color: #1190cd;
+	margin: 2px;
+	border-radius: 32px;
+	border: 1px solid #1190cd;
+	display: inline-block;
+	font-size: 13px;
+	height: 32px;
+	padding: 0 12px 0 12px;
+	text-transform: capitalize;
+}
+
+.result-tags span:hover {
+	background-color: #d0e8f3;
+}
+
 .result-card {
 	margin-bottom: 16px;
 	background: #fff;

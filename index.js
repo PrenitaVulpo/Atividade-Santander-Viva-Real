@@ -15,7 +15,7 @@ const loadPage = async () => {
 
 	results = { ...(await getRealState(state, city)) };
 
-	appendTitle(results.totalCount, "são paulo", "sp");
+	appendTitle(results.totalCount, city, state);
 
 	appendCards(results.properties);
 
@@ -26,14 +26,13 @@ const loadPage = async () => {
 		results = { ...(await getRealState(state, city)) };
 
 		appendTitle(results.totalCount, city, state);
-
 		appendCards(results.properties);
 	});
 
-	const cb = document.getElementById("toggle-button");
-	cb.addEventListener("click", () => {
-		console.log(cb.checked);
-	});
+	// const cb = document.getElementById("toggle-button");
+	// cb.addEventListener("click", () => {
+	// 	console.log(cb.checked);
+	// });
 };
 
 loadPage();

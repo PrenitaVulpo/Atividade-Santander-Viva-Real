@@ -1,3 +1,5 @@
+import appendResultsTags from "./appendResultsTags.js";
+
 const appendTitle = (number, city, state) => {
 	const resultsTitle = document.querySelector(".results-title");
 
@@ -20,6 +22,8 @@ const appendTitle = (number, city, state) => {
 	resultsTitle.appendChild(resultsText);
 	resultsTitle.appendChild(resultsCity);
 	resultsTitle.appendChild(resultsState);
+
+	appendResultsTags(city, state);
 };
 
 export default appendTitle;
